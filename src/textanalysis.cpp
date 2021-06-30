@@ -1,6 +1,7 @@
 #include "textanalysis.h"
 
 #include <cctype>
+#include <fstream>
 #include <stdexcept>
 #include <sstream>
 
@@ -46,7 +47,7 @@ void TextAnalysis::outputAnalysis( ostream &output )
 		// decompose each cleanedLine into words:
 		istringstream inputString( cleanedLine );
 		string word{};
-		while( inputString>>word ) {
+		while( inputString >> word ) {
 			words.insert( word );
 		}
 	}

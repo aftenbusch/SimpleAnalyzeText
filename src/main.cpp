@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
 	bool debug_mode{false};
 	
 	// read in and check command line arguments:
-	vector<string> commandLineArguments{};
-	for( int i=0; i<argc; ++i )
-	{
-		commandLineArguments.push_back(argv[i]);
-	}
+    vector<string> commandLineArguments{};
+    for( int i=0; i<argc; ++i )
+    {
+        commandLineArguments.push_back(argv[i]);
+    }
 	if( argc < 2 || commandLineArguments[1] == "--help" )
 	{
 		cout << "Usage: " << commandLineArguments[0] << " <input file>\n";
