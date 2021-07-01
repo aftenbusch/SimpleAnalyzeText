@@ -1,7 +1,6 @@
 #ifndef TEXTANALYSIS_H
 #define TEXTANALYSIS_H
 
-#include <fstream>
 #include <iostream>
 #include <map>
 #include <set>
